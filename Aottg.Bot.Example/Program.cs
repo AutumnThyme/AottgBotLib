@@ -58,7 +58,8 @@ namespace AottgBotLib.Example
             //Showcase that we actually can see rooms in lobby
             foreach(RoomInfo room in list)
             {
-                Console.WriteLine(room.Name);
+                Console.WriteLine($"{room.Name.Replace("`", ", ")}");
+                // name, map, diff, time, daylight, pass, random
             }
 
             //Properties of room to create
